@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Muhammed Irshad M K – Junior Data Analyst Portfolio</title>
+<meta name="description" content="Junior Data Analyst skilled in SQL, PostgreSQL, Python, Power BI and DAX. Four end-to-end analytics projects with findings and recommendations.">
+<meta property="og:title" content="Muhammed Irshad M K – Junior Data Analyst">
+<meta property="og:description" content="Four end-to-end analytics projects in SQL, Python, Power BI and DAX, each ending in findings and recommendations.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://irshad480.github.io/">
+<meta property="og:image" content="https://irshad480.github.io/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="author" content="Muhammed Irshad M K">
+<meta name="robots" content="index, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0E1A26;--surface:#15263A;--ink:#E6EEF6;--muted:#9DB0C4;--line:#27405A;--accent:#4FC3CC;--accent-ink:#0E1A26;--tint:#1B3A4A;
+--head:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;--body:"IBM Plex Sans","Segoe UI",system-ui,sans-serif;
+box-sizing:border-box;color-scheme:dark;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0E1A26;--surface:#15263A;--ink:#E6EEF6;--muted:#9DB0C4;--line:#27405A;--accent:#4FC3CC;--accent-ink:#0E1A26;--tint:#1B3A4A;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0E1A26;--surface:#15263A;--ink:#E6EEF6;--muted:#9DB0C4;--line:#27405A;--accent:#4FC3CC;--accent-ink:#0E1A26;--tint:#1B3A4A;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 var(--body);-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--head);line-height:1.1;margin:0;letter-spacing:-.02em}
+h2{font-size:1.75rem;font-weight:700}p{margin:0}
+.bar{display:flex;justify-content:space-between;align-items:center;padding:20px 0;gap:16px;flex-wrap:wrap}
+.bar b{font:700 1.05rem var(--head)}
+.bar nav{display:flex;gap:22px;flex-wrap:wrap;font-size:.95rem;align-items:center}
+.bar nav a{color:var(--muted);text-decoration:none}.bar nav a:hover{color:var(--accent)}
+.hero{display:grid;grid-template-columns:1.15fr 1fr;gap:56px;align-items:center;padding:56px 0 72px}
+.hero h1{font-size:clamp(2.4rem,5.2vw,3.9rem);font-weight:800}
+.role{margin-top:18px;font:600 1.15rem var(--head);color:var(--accent)}
+.lede{margin-top:18px;color:var(--muted);max-width:52ch}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-block;padding:12px 20px;border-radius:8px;font-weight:600;text-decoration:none;border:2px solid var(--accent)}
+.btn.main{background:var(--accent);color:var(--accent-ink)}.btn.alt{color:var(--accent)}
+.btn:hover{filter:brightness(1.08)}.btn:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.find{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:28px}
+.find h2{font-size:1.2rem}.find>p{font-size:.92rem;color:var(--muted);margin:6px 0 22px}
+.find ul{list-style:none;margin:0;padding:0;display:grid;gap:20px}
+.lab{display:flex;justify-content:space-between;gap:12px;font-weight:600;font-size:.97rem}
+.lab{align-items:baseline}.lab b{font-family:var(--head);font-size:1.6rem;color:var(--accent);line-height:1}
+.find li{padding-bottom:18px;border-bottom:1px solid var(--line)}.find li:last-child{padding-bottom:0;border-bottom:0}
+.find small{display:block;margin-top:4px}
+.find small{color:var(--muted);font-size:.85rem}
+section{padding:64px 0;border-top:1px solid var(--line)}
+.split{display:grid;grid-template-columns:220px 1fr;gap:40px}
+.split>h2{position:sticky;top:24px;align-self:start}
+.proj{padding:36px 0;border-top:1px solid var(--line)}.proj:first-child{padding-top:0;border-top:0}
+.proj h3{font-size:1.45rem;font-weight:700}
+.sum{margin-top:10px;color:var(--muted);max-width:62ch}
+.stats{display:flex;gap:12px 36px;flex-wrap:wrap;margin:20px 0 0;padding:16px 0;border-block:1px solid var(--line)}
+.stats div{display:flex;flex-direction:column}
+.stats b{font:700 1.5rem var(--head);color:var(--accent);line-height:1.1}
+.stats span{font-size:.85rem;color:var(--muted)}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0 0;padding:0;list-style:none}
+.tags li{background:var(--tint);font-size:.82rem;font-weight:500;padding:3px 11px;border-radius:99px}
+dl{margin:18px 0 0;display:grid;grid-template-columns:120px 1fr;gap:12px 20px}
+dt{font-weight:600}dd{margin:0;color:var(--muted)}dd strong{color:var(--ink);font-weight:600}
+details{margin-top:18px;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+summary{cursor:pointer;padding:12px 16px;font-weight:600}
+details>div{padding:0 16px 16px;color:var(--muted)}
+details ol,details ul{margin:6px 0 0;padding-left:20px}details li{margin-bottom:4px}
+details p+p{margin-top:10px}
+.link{display:inline-block;margin-top:16px;font-weight:600}
+.skills{display:grid;grid-template-columns:1fr 1fr;gap:32px 40px}
+.skills h3{font-size:1.05rem;margin-bottom:8px}.skills p{color:var(--muted)}
+.about p{color:var(--muted);max-width:62ch}.about p+p{margin-top:14px}
+.row{display:grid;grid-template-columns:1fr auto;gap:4px 24px;padding:22px 0;border-top:1px solid var(--line)}
+.row:first-of-type{border-top:0;padding-top:0}
+.row h3{font-size:1.2rem}.row .when{color:var(--muted);font-weight:500;white-space:nowrap}
+.row .sub{color:var(--muted);grid-column:1/-1}
+.row details{grid-column:1/-1;margin-top:12px}
+.row ul{grid-column:1/-1;margin:10px 0 0;padding-left:20px;color:var(--muted)}
+.row li{margin-bottom:6px}.row li::marker{color:var(--accent)}
+.contact p{max-width:52ch;color:var(--muted);margin:14px 0 26px}
+.info{margin-top:26px!important;font-size:.97rem}
+footer{padding:28px 0 40px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+@media (max-width:860px){.hero{grid-template-columns:1fr;gap:40px;padding-top:32px}.split{grid-template-columns:1fr;gap:24px}.split>h2{position:static}}
+@media (max-width:560px){.skills{grid-template-columns:1fr}dl{grid-template-columns:1fr;gap:2px}dd{margin-bottom:10px}.row{grid-template-columns:1fr}.find{padding:22px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.shots{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:22px}
+.shot{display:block;padding:0;border:1px solid var(--line);border-radius:10px;background:var(--surface);cursor:zoom-in;overflow:hidden;text-align:left;font:inherit;color:inherit}
+.shot:first-child{grid-column:1/-1}
+.shot img{display:block;width:100%;height:auto;aspect-ratio:1280/718;object-fit:contain;background:var(--surface)}
+.shot span{display:block;padding:9px 14px;font-size:.88rem;color:var(--muted)}
+.shot:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+dialog{padding:0;border:0;background:none;max-width:96vw;max-height:96vh}
+dialog img{display:block;max-width:96vw;max-height:92vh;border-radius:10px}
+dialog::backdrop{background:rgba(5,12,20,.82)}
+@media (max-width:560px){.shots{grid-template-columns:1fr}}
+ 
+.dashboard-preview{margin-top:22px}
+.dashboard-preview .shot{width:100%}
+.gallery-actions{margin-top:14px}
+.gallery-actions .btn{cursor:pointer;font:inherit}
+#lb{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px;max-width:96vw}
+#lb img{max-width:92vw;max-height:78vh}
+#lb .gallery-controls{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-top:10px;color:var(--ink)}
+#lb button{cursor:pointer;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:9px 14px;border-radius:8px;font:inherit}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="bar">
+<b>Muhammed Irshad M K</b>
+<nav aria-label="Sections"><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="https://drive.google.com/file/d/13hNdtZ-IT5za60dTLIWMYWWPBplGxRvq/view?usp=sharing" target="_blank" rel="noopener">CV</a></nav>
+</header>
+<main>
+<div class="hero">
+<div>
+<h1>I turn raw order data into clear answers.</h1>
+<p class="role">Junior Data Analyst</p>
+<p class="lede">BCA graduate and Google Data Analytics Professional Certificate holder, using SQL, PostgreSQL, Python, Excel and Power BI to turn raw data into actionable business insights. Across four end-to-end analytics projects, I have worked on data cleaning, validation, data modeling, KPI development, dashboard creation and business recommendations. I’m seeking an entry-level Data Analyst opportunity in the UAE.</p>
+<div class="cta">
+<a class="btn main" href="https://drive.google.com/file/d/13hNdtZ-IT5za60dTLIWMYWWPBplGxRvq/view?usp=sharing" target="_blank" rel="noopener">View CV</a>
+<a class="btn alt" href="mailto:muhd.irshad.mk@gmail.com">Email me</a>
+<a class="btn alt" href="https://github.com/irshad480" target="_blank" rel="noopener">GitHub</a>
+<a class="btn alt" href="https://www.linkedin.com/in/muhammed-irshad-b21523360" target="_blank" rel="noopener">LinkedIn</a>
+</div>
+</div>
+<aside class="find" aria-label="Findings from my projects">
+<h2>What my projects found</h2>
+<p>Real figures from the analyses below. Each is a share of orders, sales or customers in its own project, so they are not meant to be compared with each other.</p>
+<ul>
+<li><div class="lab"><span>Orders delivered late</span><b>57.29%</b></div><small>Logistics &amp; Supply Chain case study</small></li>
+<li><div class="lab"><span>Sales tied to late orders</span><b>54.71%</b></div><small>Logistics &amp; Supply Chain case study, $20.13M</small></li>
+<li><div class="lab"><span>Orders delayed</span><b>28.81%</b></div><small>E-commerce Sales &amp; Customer Analytics</small></li>
+<li><div class="lab"><span>Customers who buy again</span><b>3.05%</b></div><small>E-commerce Sales &amp; Customer Analytics</small></li>
+</ul>
+</aside>
+</div>
+
+<section id="projects" class="split">
+<h2>Projects</h2>
+<div>
+<article class="proj">
+<h3>Product Growth Intelligence Platform (PGIP)</h3>
+<p><strong>Featured project · Business performance, customer retention and growth analytics</strong></p>
+<p class="sum">An end-to-end, six-page Power BI analytics platform bringing business performance, customer behavior, products, marketing, retention and funnel analysis into one decision-support report. I generated the synthetic dataset in Python, prepared and modeled it, and developed DAX measures and executive insights.</p>
+<div class="stats"><div><b>Electronics</b><span>top revenue category</span></div><div><b>Sports</b><span>category flagged for optimization</span></div><div><b>6</b><span>report pages</span></div></div>
+<div class="dashboard-preview">
+  <button class="shot" type="button" data-gallery="pgip"><img src="pgip-overview.png" width="1280" height="718" alt="PGIP Executive Overview dashboard showing revenue, profit, orders and business performance"><span>Dashboard preview — Executive Overview</span></button>
+  <p class="gallery-actions"><button class="btn main" type="button" data-open-gallery="pgip">View Dashboard</button></p>
+</div>
+<ul class="tags"><li>Python</li><li>Pandas</li><li>PostgreSQL</li><li>SQL</li><li>Power Query</li><li>DAX</li><li>Data Modeling</li><li>Power BI</li></ul>
+<dl>
+<dt>Finding</dt><dd><strong>Electronics is the top revenue category.</strong> Revenue, profit and customer acquisition all rose against the previous period in the displayed data. The dataset is synthetic, so this shows the analysis, not real company results.</dd>
+<dt>Advice</dt><dd>Optimize the Sports category, expand Electronics inventory, win back customers whose engagement is declining, and investigate funnel drop-offs.</dd>
+</dl>
+<details><summary>How I built it</summary><div>
+<p>Python generated customers, products, orders, sessions and events. PostgreSQL and SQL prepared the data, and Power Query shaped it for the model.</p>
+<ul><li>Model: three fact tables (orders, sessions, events) and three dimensions (date, users, products).</li><li>Helper tables for cohort, churn-risk, purchase-frequency, lifecycle and funnel analysis.</li><li>One central measures table with DAX KPIs and time intelligence: YTD, previous period, previous year and growth %.</li><li>Filters for date, country, customer segment and device.</li></ul></div></details>
+<a class="link" href="https://github.com/irshad480/Product-Growth-Intelligence-Platform" target="_blank" rel="noopener">View on GitHub</a>
+</article>
+
+<article class="proj">
+<h3>Logistics &amp; Supply Chain Performance Analytics</h3>
+<p class="sum">A diagnostic analysis of delivery performance, operational risk and financial exposure across a global supply chain, using the public DataCo Supply Chain dataset.</p>
+<div class="stats"><div><b>180K+</b><span>records (65,752 orders)</span></div><div><b>57.29%</b><span>late-delivery rate</span></div><div><b>$20.13M</b><span>sales tied to late orders</span></div></div><div class="dashboard-preview">
+  <button class="shot" type="button" data-gallery="logistics"><img src="logistics-overview.png" width="1280" height="718" alt="Logistics dashboard overview showing order totals, sales, profit, delivery rates and delivery status distribution"><span>Dashboard preview — Overview</span></button>
+  <p class="gallery-actions"><button class="btn main" type="button" data-open-gallery="logistics">View Dashboard</button></p>
+</div>
+
+<ul class="tags"><li>Python</li><li>Pandas</li><li>Power Query</li><li>DAX</li><li>Power BI</li></ul>
+<dl>
+<dt>Finding</dt><dd><strong>First Class shows a 95.32% late rate.</strong> Late orders carry 54.71% of total sales. Central Africa is at 57.96%, and Golf Bags &amp; Carts at 68.85%. Several region and shipping-mode pairs concentrate the risk.</dd>
+<dt>Advice</dt><dd>Investigate First Class operations, prioritize high-exposure regions, review carrier and routing for risky region and shipping-mode pairs, and monitor risky product categories.</dd>
+<dt>Caveat</dt><dd>This is descriptive and diagnostic work. It shows patterns and exposure, not that delays cause profit changes.</dd>
+</dl>
+<details><summary>How I built it</summary><div>
+<ol><li>Validated the data in Python and Pandas: missing values, duplicate rows, order IDs, delivery status and late-risk flags.</li><li>Prepared it in Power Query and built the Power BI model.</li><li>Wrote DAX measures for delivery, sales, profit and risk KPIs.</li><li>Cross-checked Power BI results against Python calculations.</li><li>Built four pages: overview, root cause, business impact and recommendations.</li></ol>
+<p>Method note: canceled shipments are excluded from delivery-rate denominators, and orders are counted with a distinct count because one order can have several items.</p></div></details>
+<a class="link" href="https://github.com/irshad480/Logistics-Supply-Chain-Performance-Analytics" target="_blank" rel="noopener">View on GitHub</a>
+</article>
+
+<article class="proj">
+<h3>E-commerce Sales &amp; Customer Analytics Dashboard</h3>
+<p class="sum">An end-to-end analysis from raw transaction data in PostgreSQL to a five-page Power BI report covering sales, customers, products, delivery performance and payments.</p>
+<div class="stats"><div><b>99K</b><span>orders</span></div><div><b>95K</b><span>unique customers</span></div><div><b>3.05%</b><span>repeat customer rate</span></div></div><div class="dashboard-preview">
+  <button class="shot" type="button" data-gallery="ecommerce"><img src="executive-overview.png" width="1280" height="718" alt="E-commerce Sales Analytics Executive Overview dashboard"><span>Dashboard preview — Executive Overview</span></button>
+  <p class="gallery-actions"><button class="btn main" type="button" data-open-gallery="ecommerce">View Dashboard</button></p>
+</div>
+<ul class="tags"><li>PostgreSQL</li><li>SQL</li><li>Power Query</li><li>DAX</li><li>Power BI</li></ul>
+<dl>
+<dt>Finding</dt><dd><strong>Almost all customers buy once.</strong> About 3.05% come back, and 28.81% of orders are delayed. Average delivery takes about 12.43 days and the average review score is about 4.03 out of 5.</dd>
+<dt>Advice</dt><dd>Run second-purchase and win-back campaigns, find consistently delayed regions, and review fulfillment bottlenecks.</dd>
+</dl>
+<details><summary>How I built it</summary><div>
+<p>Eleven SQL scripts take the data from database setup through validation, cleaning, exploratory analysis, business analysis, RFM customer segmentation, views, indexes and the final analytics view.</p>
+<p>In Power BI, DAX measures cover revenue, repeat customers, delivery rates and review rates. Text measures write an executive summary, risks and actions that update with the filters.</p></div></details>
+<a class="link" href="https://github.com/irshad480/Ecommerce-Sales-Customer-Analytics" target="_blank" rel="noopener">View on GitHub</a>
+</article>
+
+<article class="proj">
+<h3>Customer 360 Analytics Dashboard</h3>
+<p class="sum">A five-page Power BI report designed to give retail decision-makers a consolidated view of executive KPIs, customer behavior, product performance and store operations.</p>
+<div class="stats"><div><b>5</b><span>report pages</span></div><div><b>Star</b><span>schema data model</span></div></div><div class="dashboard-preview">
+  <button class="shot" type="button" data-gallery="customer360"><img src="customer360-executive-insights.png" width="1280" height="718" alt="Customer 360 Executive Insights dashboard"><span>Dashboard preview — Executive Insights</span></button>
+  <p class="gallery-actions"><button class="btn main" type="button" data-open-gallery="customer360">View Dashboard</button></p>
+</div>
+<ul class="tags"><li>Power Query</li><li>DAX</li><li>Star Schema</li><li>Power BI</li></ul>
+<dl>
+<dt>Covers</dt><dd>Revenue and department performance, customer segmentation and basket metrics, discounts and product contribution, store performance, weekly orders and peak shopping hours.</dd>
+<dt>Model</dt><dd>A central sales fact table, dimensions for products, customers and households, and calendar data, with a dedicated measures table.</dd>
+</dl>
+<a class="link" href="https://github.com/irshad480/Customer-360-Analytics" target="_blank" rel="noopener">View on GitHub</a>
+</article>
+</div>
+</section>
+
+<section id="skills" class="split">
+<h2>Skills</h2>
+<div class="skills">
+<div><h3>Languages and querying</h3><p>SQL, PostgreSQL, Python (Pandas)</p></div>
+<div><h3>BI and data visualization</h3><p>Power BI, DAX, Power Query, Tableau</p></div>
+<div><h3>Data analytics</h3><p>Data cleaning, data validation, exploratory data analysis, KPI development, dashboard development</p></div>
+<div><h3>Tools and modeling</h3><p>Microsoft Excel, Google Sheets, WordPress (WooCommerce), Jupyter Notebook, Git, GitHub, data modeling</p></div>
+</div>
+</section>
+
+<section id="about" class="split about">
+<h2>About</h2>
+<div>
+<p>I’m a junior data analyst based in Kerala, India. I studied computer applications at the University of Calicut (BCA, 2022 – 2025) and completed the Google Data Analytics Professional Certificate.</p>
+<p>My first hands-on data work was freelance: I cleaned and structured more than 1,200 product records so they could be uploaded to a store in bulk. Since then I’ve built four Power BI projects, each running from raw data through cleaning, modeling and DAX to written recommendations.</p>
+<p>I care most about trustworthy numbers, so I validate data and cross-check results before I build a chart. I’m looking for an entry-level analyst role where I can keep learning on real business data.</p>
+</div>
+</section>
+
+<section id="experience" class="split">
+<h2>Experience</h2>
+<div><div class="row">
+<h3>Freelance Product Management &amp; Data Analysis</h3><span class="when">2025</span>
+<ul>
+<li>Built and maintained a structured dataset of 1,200+ product records in Excel and Google Sheets, covering SKU, category, attributes, descriptions and SEO metadata.</li>
+<li>Cleaned and standardized naming, categories, descriptions and SKUs, resolving inconsistencies across all 1,200+ records.</li>
+<li>Structured the sheets to match the store’s listing format, so products could be bulk uploaded to WooCommerce with minimal rework.</li>
+<li>Researched competitor stores in the same niche to find product trends and popular categories, which guided new product creation.</li>
+</ul></div></div>
+</section>
+
+<section id="education" class="split">
+<h2>Education</h2>
+<div>
+<div class="row"><h3>Bachelor of Computer Applications (BCA)</h3><span class="when">2022 – 2025</span><p class="sub">University of Calicut</p></div>
+<div class="row"><h3>Google Data Analytics Professional Certificate</h3><span class="when">Jul 2026</span><p class="sub">Coursera</p>
+<details><summary>Skills and tools from this program</summary><div>
+<p><strong>Tools:</strong> spreadsheets, SQL, Tableau and Python.</p><p><strong>Skills:</strong> preparing, cleaning, analyzing and sharing data, including visualization and a capstone case study.</p>
+<p><strong>The nine courses:</strong></p><ul><li>Foundations: Data, Data, Everywhere</li><li>Ask Questions to Make Data-Driven Decisions</li><li>Prepare Data for Exploration</li><li>Process Data from Dirty to Clean</li><li>Analyze Data to Answer Questions</li><li>Share Data Through the Art of Visualization</li><li>Introduction to Data Analysis Using Python</li><li>Google Data Analytics Capstone: Complete a Case Study</li><li>Accelerate Your Job Search with AI</li></ul><p><a href="https://coursera.org/verify/professional-cert/4W23K5M5WDQY" target="_blank" rel="noopener">Verify this certificate on Coursera</a></p></div></details></div>
+<div class="row"><h3>Deloitte Australia – Data Analytics Job Simulation</h3><span class="when">Nov 2026</span><p class="sub">Forage</p>
+<details><summary>Skills and tools from this simulation</summary><div>
+<p><strong>Skills:</strong> data analysis, data visualization and database design.</p><ul><li>Completed practical tasks in data analysis and forensic technology.</li><li>Tools: Tableau and Microsoft Excel.</li></ul><p><strong>Verify:</strong> issued by Forage on November 18, 2026. Credential ID 6afdd24de1b8d6d5cbeec630.</p></div></details></div>
+</div>
+</section>
+
+<section id="contact" class="split contact">
+<h2>Contact</h2>
+<div>
+<h3 style="font-size:1.6rem">Hiring a Data Analyst?</h3>
+<p>I’m based in Kerala, India, and looking for Data Analyst opportunities in the UAE.</p>
+<div class="cta">
+<a class="btn main" href="mailto:muhd.irshad.mk@gmail.com">muhd.irshad.mk@gmail.com</a>
+<a class="btn alt" href="https://drive.google.com/file/d/13hNdtZ-IT5za60dTLIWMYWWPBplGxRvq/view?usp=sharing" target="_blank" rel="noopener">View CV</a>
+</div>
+<p class="info"><a href="https://www.linkedin.com/in/muhammed-irshad-b21523360" target="_blank" rel="noopener">LinkedIn</a> and <a href="https://github.com/irshad480" target="_blank" rel="noopener">GitHub</a></p>
+</div>
+</section>
+</main>
+<footer>© 2026 Muhammed Irshad M K</footer>
+</div>
+<dialog id="lb" aria-label="Dashboard image gallery">
+  <img alt="" id="gallery-image">
+  <div class="gallery-controls"><button type="button" id="gallery-prev" aria-label="Previous dashboard page">← Previous</button><span id="gallery-caption">Page 1 of 4</span><button type="button" id="gallery-next" aria-label="Next dashboard page">Next →</button></div>
+</dialog>
+<script>
+(function(){
+  var d=document.getElementById('lb'),i=document.getElementById('gallery-image'),cap=document.getElementById('gallery-caption');
+  var galleries={
+    pgip:[
+      {src:'pgip-overview.png',alt:'Product Growth Intelligence Platform — Executive Overview'},
+      {src:'product-analytics.png',alt:'Product Growth Intelligence Platform — Product Analytics'},
+      {src:'customer-analytics.png',alt:'Product Growth Intelligence Platform — Customer Analytics'},
+      {src:'marketing-analytics.png',alt:'Product Growth Intelligence Platform — Marketing Analytics'},
+      {src:'pgip-retention.png',alt:'Product Growth Intelligence Platform — Customer Retention'},
+      {src:'pgip-insights.png',alt:'Product Growth Intelligence Platform — Insights'}
+    ],
+    logistics:[
+      {src:'logistics-overview.png',alt:'Supply Chain Analytics — Delivery Performance Overview'},
+      {src:'logistics-root-cause.png',alt:'Supply Chain Analytics — Root Cause Analysis'},
+      {src:'logistics-business-impact.png',alt:'Supply Chain Analytics — Business Impact'},
+      {src:'logistics-recommendations.png',alt:'Supply Chain Analytics — Recommendations'}
+    ],
+    ecommerce:[
+      {src:'executive-overview.png',alt:'E-commerce Sales Analytics — Executive Overview'},
+      {src:'sales-performance.png',alt:'E-commerce Sales Analytics — Sales Performance'},
+      {src:'customer-analytics.png',alt:'E-commerce Sales Analytics — Customer Analytics'},
+      {src:'product-operations.png',alt:'E-commerce Sales Analytics — Product Operations'},
+      {src:'insights-recommendations.png',alt:'E-commerce Sales Analytics — Insights and Recommendations'}
+    ],
+    customer360:[
+      {src:'customer360-executive-insights.png',alt:'Customer 360 Analytics — Executive Insights'},
+      {src:'customer360-customer-analytics.png',alt:'Customer 360 Analytics — Customer Analytics'},
+      {src:'customer360-product-promotions.png',alt:'Customer 360 Analytics — Product Performance and Promotions'},
+      {src:'customer360-sales-operations.png',alt:'Customer 360 Analytics — Sales Operations'},
+      {src:'customer360-recommendations.png',alt:'Customer 360 Analytics — Executive Insights and Recommendations'}
+    ]
+  },active='pgip',index=0;
+  function show(n){var pages=galleries[active];index=(n+pages.length)%pages.length;i.src=pages[index].src;i.alt=pages[index].alt;cap.textContent=(index+1)+' of '+pages.length+' — '+pages[index].alt.split('—')[1].trim();}
+  function open(name){active=name;show(0);d.showModal();}
+  document.querySelectorAll('[data-open-gallery]').forEach(function(b){b.addEventListener('click',function(){open(b.getAttribute('data-open-gallery'));});});
+  document.querySelectorAll('[data-gallery]').forEach(function(b){b.addEventListener('click',function(){open(b.getAttribute('data-gallery'));});});
+  document.getElementById('gallery-prev').addEventListener('click',function(){show(index-1);});
+  document.getElementById('gallery-next').addEventListener('click',function(){show(index+1);});
+  d.addEventListener('click',function(e){if(e.target===d)d.close();});
+})();
+</script>
+</body>
+</html>
